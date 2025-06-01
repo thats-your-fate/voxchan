@@ -121,14 +121,11 @@ VoxChan is powered by a modern, high-performance Rust-based architecture with in
 [User Post] → [Axum API] → [Candle + LoRA] → [ALLOW / BLOCK Response]
 
 
----
 
 ## 🎯 Vision
 
 > VoxChan revives anonymous speech for a modern age — with intelligence, legality, and decency at its core.
 
 No more chaos. No more bans. No more toxicity-as-culture. Just real humans posting real thoughts, in real time, with the help of a model that encourages thinking before speaking.
-
----
 
 Built by [Vox Populi](https://voxpopuli.cc) — a collective of AI, ethics, and internet culture revivalists.
