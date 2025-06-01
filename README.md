@@ -113,7 +113,7 @@ VoxChan is powered by a modern, high-performance Rust-based architecture with in
 - Lightweight JS (optional, not SPA)
 - Planned client-rendered real-time post updates via WebSocket (Axum)
 
----
+
 
 ### 🔐 Moderation Flow
 
