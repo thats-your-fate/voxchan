@@ -1,4 +1,4 @@
-# 🧠 VoxChan – Anonymous Speech, Reimagined  
+# VoxChan – Anonymous Speech, Reimagined  
 **"Post anything. But stay a human."**
 
 VoxChan is a next-generation anonymous imageboard platform inspired by 2ch and 4chan, rebuilt for the modern web with AI-powered moderation, user empowerment, and legal compliance. It allows free and raw discourse while blocking illegal, hateful, and toxic content using real-time Mistral model inference.
