@@ -83,6 +83,44 @@ Features:
 - [ ] Real-time or async replies
 - [ ] Opt-in memory storage
 
+
+## 🧰 Tech Stack
+
+VoxChan is powered by a modern, high-performance Rust-based architecture with integrated AI inference and real-time moderation.
+
+### 🦀 Backend
+
+- **Rust** – Fast, safe systems-level foundation
+- **Axum** – Lightweight, async web framework (REST + WebSocket ready)
+- **Tokio** – Asynchronous runtime for scalable request handling
+- **Serde** – Serialization layer for JSON payloads
+- **ScyllaDB** (planned) – High-performance, Cassandra-compatible DB for persistence
+
+### 🤖 AI Moderation
+
+- **Candle** – Lightweight Rust ML runtime for inference
+- **Candle LoRA** – Fine-tuned moderation models based on Mistral 7B (LoRA adapters)
+- **Moderation Service** – Every post goes through Mistral inference with LoRA weights to determine if it should be `ALLOW` or `BLOCK`
+
+### 🧠 Optional AI Tools
+
+- **VoxGPT Assistants** – In-thread post improvement tools (grammar, tone, clarity)
+- **QA Threads** – User-specific chat threads powered by VoxGPT (optional memory)
+
+### 🖼️ Frontend (TBD)
+
+- Custom HTML/CSS (Futaba-style)
+- Lightweight JS (optional, not SPA)
+- Planned client-rendered real-time post updates via WebSocket (Axum)
+
+---
+
+### 🔐 Moderation Flow
+
+```text
+[User Post] → [Axum API] → [Candle + LoRA] → [ALLOW / BLOCK Response]
+
+
 ---
 
 ## 🎯 Vision
@@ -93,4 +131,4 @@ No more chaos. No more bans. No more toxicity-as-culture. Just real humans posti
 
 ---
 
-Built by [Vox Populi](https://voxpopuli.org) — a collective of AI, ethics, and internet culture revivalists.
+Built by [Vox Populi](https://voxpopuli.cc) — a collective of AI, ethics, and internet culture revivalists.
