@@ -117,7 +117,6 @@ VoxChan is powered by a modern, high-performance Rust-based architecture with in
 
 ### 🔐 Moderation Flow
 
-```text
 [User Post] → [Axum API] → [Candle + LoRA] → [ALLOW / BLOCK Response]
 
 
